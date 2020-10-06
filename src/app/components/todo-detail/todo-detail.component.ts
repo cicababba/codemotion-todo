@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Todo } from 'src/app/models/Todo';
 
 @Component({
   selector: 'app-todo-detail',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoDetailComponent implements OnInit {
 
-  constructor() { }
+  exampleTodo: Todo;
+
+  constructor() {
+    this.exampleTodo = {
+      name: "Todo di esempio",
+      completed: false,
+      content: "Contenuto del Todo, lorem ipsum...",
+    };
+  }
 
   ngOnInit(): void {
   }
