@@ -5,7 +5,7 @@ export interface Todo {
     category: TodoCategory;
 }
 
-enum TodoCategory {
+export enum TodoCategory {
     PERSONAL = 'PERSONAL',
     WORK = 'WORK',
     OTHER = 'OTHER'
