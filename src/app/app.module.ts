@@ -3,20 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BaseLayoutComponent } from './containers/base-layout/base-layout.component';
-import { TodoListComponent } from './modules/todo/components/todo-list/todo-list.component';
-import { TodoDetailComponent } from './modules/todo/components/todo-detail/todo-detail.component';
-import { TodoListItemComponent } from './modules/todo/components/todo-list-item/todo-list-item.component';
+import { TodoModule } from './modules/todo/todo.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BaseLayoutComponent,
-    TodoListComponent,
-    TodoDetailComponent,
-    TodoListItemComponent
+    BaseLayoutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TodoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
