@@ -14,9 +14,9 @@ export class BaseLayoutComponent implements OnInit {
 
   }
 
-
   goHome() {
     this.router.navigate(["todos"]);
   }
+
 
 }
