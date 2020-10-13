@@ -1,2 +1,13 @@
 <p>SONO IL BASE LAYOUT</p>
+
+<nav>
+    <ul>
+        <li><a routerLink="todos/list">List</a></li>
+        <li><a routerLink="detail">Dettaglio</a></li>
+        <li><a routerLink="todos/list-item">List-item</a></li>
+    </ul>
+    <button (click)="goHome()">BaseLayout</button>
+</nav>
+
+
 <router-outlet></router-outlet>
