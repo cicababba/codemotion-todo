@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Todo, TodoCategory } from '../../models/Todo';
 
+
 @Component({
   selector: 'app-todo-detail',
   templateUrl: './todo-detail.component.html',
