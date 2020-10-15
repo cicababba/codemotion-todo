@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-base-layout',
@@ -8,7 +9,7 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class BaseLayoutComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private translate: TranslateService) { }
 
   ngOnInit(): void {
 
@@ -19,4 +20,8 @@ export class BaseLayoutComponent implements OnInit {
     this.router.navigate(["todos"]);
   }
 
+
+  useLanguage(lan: string) {
+    this.translate.use(lan);
+  }
 }
